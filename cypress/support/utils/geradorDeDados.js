@@ -2,7 +2,7 @@ import { faker } from "@faker-js/faker";
 
 // Classe que com funções para gerar dados dinâmicos
 
-class GerenciadorDeMassas {
+class GeraDados {
   gerarNome() {
     return faker.internet.userName();
   }
@@ -11,4 +11,4 @@ class GerenciadorDeMassas {
   }
 }
 
-export default new GerenciadorDeMassas();
+export default new GeraDados();

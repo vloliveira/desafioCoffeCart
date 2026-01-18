@@ -19,6 +19,5 @@ When("o usuario seleciona 3 tipos de cafés diferentes", () => {
 });
 
 And("o usuario aceita a oferta promocional de um Mocha", () => {
-  ModalPromocao.validarModal();
-  //Modal.aceitarPromo();
+  ModalPromocao.aceitarPromocao();
 });

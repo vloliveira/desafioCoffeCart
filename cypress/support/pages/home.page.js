@@ -1,5 +1,10 @@
 import ArmazenadorDeCafes from "../utils/armazenaDadosCafe";
 
+/* O clique e a extração de dados precisam ser feitas no <li>,
+porque o .cup-body é apenas um container visual.
+O nome e o preço ficam dentro do <li> (h4 e small),
+e o click funcional também está associado ao <li>. */
+
 const CAFE = ".cup-body";
 
 class EscolherCafe {
@@ -13,16 +18,7 @@ class EscolherCafe {
         .closest("li")
         .then(($li) => {
           const nome = $li.find("h4").text().split("$")[0].trim();
-          cy.log("h4");
-          cy.log(nome);
-
           const preco = $li.find("small").text().trim();
-          cy.log("small");
-          cy.log(preco);
-
-          if (!nome || !preco) {
-            throw new Error(`Erro: nome ou preço vazio no café índice ${i}`);
-          }
 
           ArmazenadorDeCafes.adicionarItem(nome, preco);
           cy.wrap($li).click();

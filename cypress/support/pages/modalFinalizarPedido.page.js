@@ -1,4 +1,4 @@
-import GerenciadorDeMassas from "../utils/gerenciadorDeMassas";
+import GeraDados from "../utils/geradorDeDados";
 
 const MODAL_PAGAMENTO = '[aria-label="Payment form"]';
 const NOME = "#name";
@@ -9,8 +9,8 @@ const MSG_SUCESSO = ".snackbar";
 class FinalizarPedido {
   formularioFinalizarPedido() {
     cy.get(MODAL_PAGAMENTO).should("be.visible");
-    cy.get(NOME).type(GerenciadorDeMassas.gerarNome());
-    cy.get(EMAIL).type(GerenciadorDeMassas.gerarEmail());
+    cy.get(NOME).type(GeraDados.gerarNome());
+    cy.get(EMAIL).type(GeraDados.gerarEmail());
     cy.get(ENVIAR).should("be.visible").click();
   }
   validarMensagemFinal() {

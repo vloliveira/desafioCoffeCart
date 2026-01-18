@@ -37,11 +37,11 @@ class Carrinho {
 
   removerSegundoItem() {
     cy.log("Removendo segundo item do carrinho");
-    cy.get(REMOVE).click();
+    cy.get(REMOVE).should("be.visible").click();
   }
 
   finalizarPedido() {
-    cy.get(BTN_CONFERIR).click();
+    cy.get(BTN_CONFERIR).should("be.visible").click();
   }
 }
 
