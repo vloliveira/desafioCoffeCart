@@ -1,6 +1,6 @@
 # ☕ Coffee Cart - Testes E2E com Cypress + BDD
 
-> Projeto de automação de testes end-to-end desenvolvido com Cypress, Cucumber (BDD) e Page Object Model (POM) para o site Coffee Cart.
+Projeto de automação de testes end-to-end desenvolvido com Cypress, Cucumber (BDD) e Page Object Model (POM) para o site Coffee Cart.
  
 ## 👤 Autor
 
