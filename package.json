@@ -1,9 +1,9 @@
 {
   "name": "desafio_coffe_cart",
   "version": "1.0.0",
-  "description": "",
+  "description": "Desafio Coffe Cart - Aacademia QE Accenture 2026",
   "license": "ISC",
-  "author": "",
+  "author": "Vitor Oliveira",
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
@@ -14,6 +14,7 @@
     "stepDefinitions": "cypress/support/stepDefinitions"
   },
   "devDependencies": {
+    "@faker-js/faker": "^8.4.1",
     "cypress": "^15.9.0",
     "cypress-cucumber-preprocessor": "^4.3.1"
   }
