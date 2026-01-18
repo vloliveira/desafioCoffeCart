@@ -4,7 +4,7 @@
  
 ## 👤 Autor
 
-**Vitor Lopes de Oliveira**
+**Vitor Oliveira**
 
 Desenvolvido para o **Desafio Coffee Cart - Academia QE Accenture 2026**
 
