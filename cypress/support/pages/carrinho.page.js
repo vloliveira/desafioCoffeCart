@@ -35,8 +35,8 @@ class Carrinho {
       });
   }
 
-  removerSegundoItem() {
-    cy.log("Removendo segundo item do carrinho");
+  removerItem() {
+    cy.log("Removendo item do carrinho");
     cy.get(REMOVE).should("be.visible").click();
   }
 

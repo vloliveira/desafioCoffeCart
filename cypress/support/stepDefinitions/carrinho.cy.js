@@ -15,7 +15,7 @@ And("o usuario acessa a pagina de carrinho", () => {
 });
 
 And("o usuario remove um item do carrinho", () => {
-  Carrinho.removerSegundoItem();
+  Carrinho.removerItem();
 });
 
 Then("o usuario realiza o pagamento", () => {
