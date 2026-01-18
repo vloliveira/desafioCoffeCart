@@ -9,5 +9,5 @@ Funcionalidade: Comprar café
     E o usuario acessa a pagina de carrinho
     E o usuario remove um item do carrinho
     Então o usuario realiza o pagamento
-    E mensagem de sucesso e exibida
+    E a mensagem de sucesso deve ser exibida na tela
  

@@ -23,6 +23,6 @@ Then("o usuario realiza o pagamento", () => {
   FinalizarPedido.formularioFinalizarPedido();
 });
 
-And("mensagem de sucesso e exibida", () => {
+And("a mensagem de sucesso deve ser exibida na tela", () => {
   FinalizarPedido.validarMensagemFinal;
 });
