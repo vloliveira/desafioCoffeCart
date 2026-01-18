@@ -2,6 +2,13 @@
 
 > Projeto de automação de testes end-to-end desenvolvido com Cypress, Cucumber (BDD) e Page Object Model (POM) para o site Coffee Cart.
  
+## 👤 Autor
+
+**Vitor Lopes de Oliveira**
+
+Desenvolvido para o **Desafio Coffee Cart - Academia QE Accenture 2026**
+
+---
 
 ## 📋 Sobre o Projeto
 
@@ -158,12 +165,6 @@ Cada página/componente da aplicação possui sua própria classe, encapsulando 
 - ✅ Validações reativas
 - ✅ Nomenclatura clara e padronizada
 - ✅ Separação de responsabilidades
-
-## 👤 Autor
-
-**Vitor Lopes de Oliveira**
-
-Desenvolvido para o **Desafio Coffee Cart - Academia QE Accenture 2026**
 
 ---
 
