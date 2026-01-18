@@ -1,5 +1,6 @@
-import DataFactory from "../utils/dataFactory";
+import GerenciadorDeMassas from "../utils/gerenciadorDeMassas";
 
+const MODAL_PAGAMENTO = '[aria-label="Payment form"]';
 const NOME = "#name";
 const EMAIL = "#email";
 const ENVIAR = "#submit-payment";
@@ -7,9 +8,10 @@ const MSG_SUCESSO = ".snackbar";
 
 class FinalizarPedido {
   formularioFinalizarPedido() {
-    cy.get(NOME).type(DataFactory.gerarNome());
-    cy.get(EMAIL).type(DataFactory.gerarEmail());
-    cy.get(ENVIAR).click();
+    cy.get(MODAL_PAGAMENTO).should("be.visible");
+    cy.get(NOME).type(GerenciadorDeMassas.gerarNome());
+    cy.get(EMAIL).type(GerenciadorDeMassas.gerarEmail());
+    cy.get(ENVIAR).should("be.visible").click();
   }
   validarMensagemFinal() {
     cy.get(MSG_SUCESSO)

@@ -11,6 +11,7 @@ import FinalizarPedido from "../pages/modalFinalizarPedido.page";
 
 And("o usuario acessa a pagina de carrinho", () => {
   Carrinho.irAoCarrinho();
+  Carrinho.validarItensCarrinho();
 });
 
 And("o usuario remove um item do carrinho", () => {

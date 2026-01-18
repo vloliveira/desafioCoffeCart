@@ -16,3 +16,5 @@ class ModalPromocao {
   }
 }
 export default new ModalPromocao();
+
+//Colocar o café do desconto na lista de cafés selecionados
